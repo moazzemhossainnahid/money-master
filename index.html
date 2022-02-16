@@ -12,14 +12,65 @@
 <body>
 
     <header class="bg-white p-5">
-        <h1 class="display-4 text-center text-success font-weight-bold">My Monthly Bank</h1>
+        <h1 class="display-4 text-success font-weight-bold">My Monthly Bank</h1>
     </header>
 
     <main class="">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6">
-                    
+            <div class="row d-flex justify-content-between">
+                <div class="col-12 col-md-12 col-lg-6 m-2">
+                    <div class="">
+                        <img src="images/bank-logo.jpg" alt="Bank" class="img-flluid rounded">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-5 m-2 bg-light text-center">
+                    <h3 class="display-6 py-3">Income</h3>
+                    <div class="py-3 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Income: </h4> &nbsp;
+                        <input style="background-color: #ddd; border: none;" type="number" name="" id="income" value="20000">
+                    </div>
+                    <h3 class="display-6 py-3">Expenses</h3>
+                    <div class="py-3 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Food: </h4> &nbsp;
+                        <input type="number" name="" id="food" value="20000">
+                    </div>
+                    <div class="py-3 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Rent: </h4> &nbsp;
+                        <input type="number" name="" id="rent" value="20000">
+                    </div>
+                    <div class="py-3 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Others: </h4> &nbsp;
+                        <input type="number" name="" id="others" value="20000">
+                    </div>
+
+                    <button id="calculate" class="btn btn-success my-3 px-5">Calculate</button>
+
+                    <div class="py-1 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Total Expenses: </h4> &nbsp;
+                        <h4 id="totalExpenses" class="display-6-font-weight-bold">5500</h4>
+                    </div>
+
+                    <div class="py-1 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Balance: </h4> &nbsp;
+                        <h4 id="totalExpenses" class="display-6-font-weight-bold">4500</h4>
+                    </div>
+
+                    <div class="py-3 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Save: </h4> &nbsp;
+                        <input style="width: 70px;" type="number" name="" id="save" value="20">  &nbsp;
+                        <h4 class="font-weight-bold"> % </h4> &nbsp;
+                        <button id="calculate" class="btn btn-success px-4 ">Save</button>
+                    </div>
+
+                    <div class="py-3 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Saving Amount: </h4> &nbsp;
+                        <h4 id="totalExpenses" class="display-6-font-weight-bold">2000</h4>
+                    </div>
+
+                    <div class="py-2 d-flex justify-content-center align-items-center">
+                        <h4 class="font-weight-bold">Remaining Amount: </h4> &nbsp;
+                        <h4 id="totalExpenses" class="display-6-font-weight-bold">2500</h4>
+                    </div>
                 </div>
             </div>
         </div>

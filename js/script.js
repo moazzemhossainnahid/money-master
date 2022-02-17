@@ -112,5 +112,7 @@ document.getElementById('saveBtn').addEventListener('click', function(){
         document.getElementById('failedSA').style.display = 'none';
     }else{
         document.getElementById('failedSA').style.display = 'block';
+        savingTxt.innerText = '000';
+        remainingTxt.innerText = '000';
     }
 });

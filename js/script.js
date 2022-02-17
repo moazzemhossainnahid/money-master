@@ -6,14 +6,14 @@ function getIncomeValue(){
     const income = parseInt(incomeTxt.value);
 
     // get Income Validation
-    if(incomeTxt.value == ''){
-        document.getElementById('failedI').style.display = 'block';
-    }else if(income < 0 || income == 0){
-        document.getElementById('failedI2').style.display = 'block';
-    }
-    else{
-        document.getElementById('failedI').style.display = 'none';
-    };
+        if(incomeTxt.value == ''){
+                document.getElementById('failedI').style.display = 'block';
+        }else if(income < 0 || income == 0){
+            document.getElementById('failedI2').style.display = 'block';
+        }
+        else{
+            document.getElementById('failedI').style.display = 'none';
+        };
 
 
     return income;
@@ -26,32 +26,32 @@ function getExpensesValue(){
     const food = parseInt(foodTxt.value);
     const rentTxt = document.getElementById('rent');
     const rent = parseInt(rentTxt.value);
-    const othersTxt = document.getElementById('others');
-    const others = parseInt(othersTxt.value);
+    const clothesTxt = document.getElementById('clothes');
+    const clothes = parseInt(clothesTxt.value);
 
-    const totalExp = food + rent + others;
+    const totalExp = food + rent + clothes;
 
     // get Expense Validation
     if(foodTxt.value == ''){
         document.getElementById('failedF').style.display = 'block';
     }else if(rentTxt.value == ''){
         document.getElementById('failedR').style.display = 'block';
-    }else if(othersTxt.value == ''){
-        document.getElementById('failedO').style.display = 'block';
+    }else if(clothesTxt.value == ''){
+        document.getElementById('failedC').style.display = 'block';
     }else if(food < 0 || food == 0){
         document.getElementById('failedF2').style.display = 'block';
     }else if(rent < 0 || rent == 0){
         document.getElementById('failedR2').style.display = 'block';
-    }else if( others < 0 || others == 0){
-        document.getElementById('failedO2').style.display = 'block';
+    }else if( clothes < 0 || clothes == 0){
+        document.getElementById('failedC2').style.display = 'block';
     }
     else{
         document.getElementById('failedF').style.display = 'none';
         document.getElementById('failedF2').style.display = 'none';
         document.getElementById('failedR').style.display = 'none';
         document.getElementById('failedR2').style.display = 'none';
-        document.getElementById('failedO').style.display = 'none';
-        document.getElementById('failedO2').style.display = 'none';
+        document.getElementById('failedC').style.display = 'none';
+        document.getElementById('failedC2').style.display = 'none';
     };
 
     
@@ -71,16 +71,19 @@ document.getElementById('calculate').addEventListener('click', function(){
     const totalExpenseTxt = document.getElementById('totalExpenses');
     totalExpenseTxt.innerText= expense;
 
+    // Get Balance
+    const balanceTxt = document.getElementById('balance');
+    balanceTxt.innerText = balance;
+
     if(income > expense){
         // totalExpenseTxt.innerText= expense;
         document.getElementById('failedVD').style.display = 'none';
     }else{
         document.getElementById('failedVD').style.display = 'block';
+        balanceTxt.innerText = 'Insufficient Balance';
     }
 
-    // Get Balance
-    const balanceTxt = document.getElementById('balance');
-    balanceTxt.innerText = balance;
+
 });
 
 // Handle Savings 

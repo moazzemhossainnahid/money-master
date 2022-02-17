@@ -28,7 +28,7 @@
                     <h3 class="display-6 py-3">Income</h3>
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Income: </h4> &nbsp;
-                        <input style="background-color: #ddd; border: none;" placeholder="000" type="number" name="" id="income" value="">
+                        <input style="background-color: #ddd; border: none;" placeholder="000" type="number" min="0" name="" id="income" value="">
                     </div>
                     <div class="notify-section">
                         <p style="display: none;" id="failedI" class="notify text-danger">❌ Please Enter Your Monthly Income !</p>
@@ -37,7 +37,7 @@
                     <h3 class="display-6 py-3">Expenses</h3>
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Food: </h4> &nbsp;
-                        <input type="number" name="" placeholder="000" id="food" value="">
+                        <input type="number" name="" placeholder="000" id="food" min="0" value="">
                     </div>
                     <div class="notify-section">
                         <p style="display: none;" id="failedF" class="notify text-danger">❌ Please Enter Your Monthly Food Cost !</p>
@@ -45,19 +45,19 @@
                     </div>
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Rent: </h4> &nbsp;
-                        <input type="number" name="" placeholder="000" id="rent" value="">
+                        <input type="number" name="" placeholder="000" id="rent" min="0" value="">
                     </div>
                     <div class="notify-section">
                         <p style="display: none;" id="failedR" class="notify text-danger">❌ Please Enter Your Monthly Rent Cost !</p>
                         <p style="display: none;" id="failedR2" class="notify text-danger">❌ Please Input Valid Rent Cost !</p>
                     </div>
                     <div class="py-3 d-flex justify-content-center align-items-center">
-                        <h4 class="font-weight-bold">Others: </h4> &nbsp;
-                        <input type="number" name="" placeholder="000" id="others" value="">
+                        <h4 class="font-weight-bold">Clothes: </h4> &nbsp;
+                        <input type="number" name="" placeholder="000" id="clothes" min="0" value="">
                     </div>
                     <div class="notify-section">
-                        <p style="display: none;" id="failedO" class="notify text-danger">❌ Please Enter Your Monthly Others Cost !</p>
-                        <p style="display: none;" id="failedO2" class="notify text-danger">❌ Please Input Valid Others Cost !</p>
+                        <p style="display: none;" id="failedC" class="notify text-danger">❌ Please Enter Your Monthly Clothes Cost !</p>
+                        <p style="display: none;" id="failedC2" class="notify text-danger">❌ Please Input Valid Clothes Cost !</p>
                     </div>
 
                     <button id="calculate" class="btn btn-success my-3 px-5">Calculate</button>
@@ -77,7 +77,7 @@
 
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Save: </h4> &nbsp;
-                        <input style="width: 70px;" type="number" placeholder="000" name="" id="saveInput" value="20">  &nbsp;
+                        <input style="width: 70px;" type="number" placeholder="000" name="" min="0" id="saveInput" value="20">  &nbsp;
                         <h4 class="font-weight-bold"> % </h4> &nbsp;
                         <button id="saveBtn" class="btn btn-success px-4 ">Save</button>
                     </div>

@@ -69,7 +69,14 @@ document.getElementById('calculate').addEventListener('click', function(){
 
     // get Total Expenses
     const totalExpenseTxt = document.getElementById('totalExpenses');
-    totalExpenseTxt.innerText= getExpensesValue();
+    totalExpenseTxt.innerText= expense;
+
+    if(income > expense){
+        // totalExpenseTxt.innerText= expense;
+        document.getElementById('failedVD').style.display = 'none';
+    }else{
+        document.getElementById('failedVD').style.display = 'block';
+    }
 
     // Get Balance
     const balanceTxt = document.getElementById('balance');
@@ -91,8 +98,19 @@ document.getElementById('saveBtn').addEventListener('click', function(){
 
     // get Save Amount
     const savingTxt = document.getElementById('savingAmount');
-    savingTxt.innerText = savings;
+    // savingTxt.innerText = savings;
 
     const remainingTxt = document.getElementById('remainingAmount');
-    remainingTxt.innerText = balance - savings;
+    // remainingTxt.innerText = balance - savings;
+
+    
+
+     if(savings < balance){
+        savingTxt.innerText = savings;
+        remainingTxt.innerText = balance - savings;
+        // totalExpenseTxt.innerText= expense;
+        document.getElementById('failedSA').style.display = 'none';
+    }else{
+        document.getElementById('failedSA').style.display = 'block';
+    }
 });

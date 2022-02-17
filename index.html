@@ -27,32 +27,48 @@
                     <h3 class="display-6 py-3">Income</h3>
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Income: </h4> &nbsp;
-                        <input style="background-color: #ddd; border: none;" type="number" name="" id="income" value="20000">
+                        <input style="background-color: #ddd; border: none;" type="number" name="" id="income" value="">
+                    </div>
+                    <div class="notify-section">
+                        <p style="display: none;" id="failedI" class="notify text-danger">❌ Please Enter Your Monthly Income !</p>
+                        <p style="display: none;" id="failedI2" class="notify text-danger">❌ Please Input Valid Income !</p>
                     </div>
                     <h3 class="display-6 py-3">Expenses</h3>
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Food: </h4> &nbsp;
                         <input type="number" name="" id="food" value="">
                     </div>
+                    <div class="notify-section">
+                        <p style="display: none;" id="failedF" class="notify text-danger">❌ Please Enter Your Monthly Food Cost !</p>
+                        <p style="display: none;" id="failedF2" class="notify text-danger">❌ Please Input Valid Food Cost !</p>
+                    </div>
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Rent: </h4> &nbsp;
                         <input type="number" name="" id="rent" value="">
                     </div>
+                    <div class="notify-section">
+                        <p style="display: none;" id="failedR" class="notify text-danger">❌ Please Enter Your Monthly Rent Cost !</p>
+                        <p style="display: none;" id="failedR2" class="notify text-danger">❌ Please Input Valid Rent Cost !</p>
+                    </div>
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Others: </h4> &nbsp;
                         <input type="number" name="" id="others" value="">
+                    </div>
+                    <div class="notify-section">
+                        <p style="display: none;" id="failedO" class="notify text-danger">❌ Please Enter Your Monthly Others Cost !</p>
+                        <p style="display: none;" id="failedO2" class="notify text-danger">❌ Please Input Valid Others Cost !</p>
                     </div>
 
                     <button id="calculate" class="btn btn-success my-3 px-5">Calculate</button>
 
                     <div class="py-1 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Total Expenses: </h4> &nbsp;
-                        <h4 id="totalExpenses" class="display-6-font-weight-bold">5500</h4>
+                        <h4 id="totalExpenses" class="display-6-font-weight-bold">000</h4>
                     </div>
 
                     <div class="py-1 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Balance: </h4> &nbsp;
-                        <h4 id="balance" class="display-6-font-weight-bold">4500</h4>
+                        <h4 id="balance" class="display-6-font-weight-bold">000</h4>
                     </div>
 
                     <div class="py-3 d-flex justify-content-center align-items-center">
@@ -64,12 +80,12 @@
 
                     <div class="py-3 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Saving Amount: </h4> &nbsp;
-                        <h4 id="savingAmount" class="display-6-font-weight-bold">2000</h4>
+                        <h4 id="savingAmount" class="display-6-font-weight-bold">000</h4>
                     </div>
 
                     <div class="py-2 d-flex justify-content-center align-items-center">
                         <h4 class="font-weight-bold">Remaining Amount: </h4> &nbsp;
-                        <h4 id="remainingAmount" class="display-6-font-weight-bold">2500</h4>
+                        <h4 id="remainingAmount" class="display-6-font-weight-bold">000</h4>
                     </div>
                 </div>
             </div>
